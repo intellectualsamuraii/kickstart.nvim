@@ -611,6 +611,18 @@ require('lazy').setup({
       --  See `:help lsp-config` for information about keys and how to configure
       ---@type table<string, vim.lsp.Config>
       local servers = {
+        tinymist = {
+          settings = {
+            formatterMode = "typstyle",
+            exportPdf = "onType",
+            semanticTokens = "disable"
+          }
+        },
+        basedpyright = {
+          -- analysis = {
+          --   diagnosticMode = "openFilesOnly",
+          -- }
+        },
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
