@@ -166,7 +166,7 @@ vim.o.confirm = true
 
 -- NOTE: Custom stuff. Dont know where else to put
 -- This removes the dash character of the list of keywords that represent word separators like the underscore. Because when I jump between words and there is a dash it's annoying when I have to jump through dashes even though they're full words.
--- vim.opt.iskeyword:append '-'
+vim.opt.iskeyword:append '-'
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
