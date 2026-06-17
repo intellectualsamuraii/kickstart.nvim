@@ -24,7 +24,8 @@ return {
     'jay-babu/mason-nvim-dap.nvim',
 
     -- Add your own debuggers here
-    'leoluz/nvim-dap-go',
+    'leoluz/nvim-dap-go', -- Go
+    'https://codeberg.org/mfussenegger/nvim-dap-python',-- Python
   },
   keys = {
     -- Basic debugging keymaps, feel free to change to your liking!
@@ -106,5 +107,7 @@ return {
         detached = vim.fn.has 'win32' == 0,
       },
     }
+    -- Install Python specific config
+    require("dap-python").setup("uv")
   end,
 }
